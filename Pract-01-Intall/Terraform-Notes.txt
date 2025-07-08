@@ -8,7 +8,7 @@ Terraform is an IAC tool, used primarily by DevOps teams to automate various inf
 Terraform allows you to describe your complete infrastructure in the form of code. Even if your servers come from different providers such as AWS or Azure, Terraform helps you build and manage these resources in parallel across providers. Think of Terraform as connective tissue and common language that you can utilize to manage your entire IT stack.
 
 
-###--- Benefits of Infrastructure-as-Code (IaC) ---###
+###--- Benefits of Infrastructure-as-Code (IaC) ---###   
 
 IaC replaces standard operating procedures and manual effort required for IT resource management with lines of code. Instead of manually configuring cloud nodes or physical hardware, IaC automates the process infrastructure management through source code.
 
