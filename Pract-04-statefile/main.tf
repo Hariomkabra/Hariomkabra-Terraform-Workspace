@@ -1,10 +1,13 @@
-resource "aws_instance" "name" {
-    ami = "ami-05ffe3c48a9991133"  // Replace with a valid AMI ID
-    instance_type = "t2.micro"
-    key_name = "test"
-
-    tags = {
-        day = "day - 04"
-    }
-  
+provider "aws" {
+  region = "us-east-1"
 }
+
+resource "aws_instance" "name" {
+  ami           = "ami-020cba7c55df1f615"  // Replace with a valid AMI ID
+  instance_type = "t2.nano"
+
+  tags = {
+    day = "day - 04"
+  }
+
+}  

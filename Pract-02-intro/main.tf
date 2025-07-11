@@ -4,3 +4,4 @@ resource "aws_instance" "name" {
     key_name = "test"
   
 }
+
