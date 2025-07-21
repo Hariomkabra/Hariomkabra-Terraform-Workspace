@@ -1,6 +1,10 @@
 resource "aws_db_instance" "default" {
   allocated_storage       = 10
+<<<<<<< HEAD
    identifier             = "book-rds"
+=======
+   identifier =             "book-rds"
+>>>>>>> fb9a86a18d13cc1fa1805f90b45eb097ad308609
   db_name                 = "mydb"
   engine                  = "mysql"
   engine_version          = "8.0"
@@ -77,4 +81,8 @@ resource "aws_secretsmanager_secret_version" "rds_secret_version" {
     port     = 3306
   })
   depends_on = [aws_db_instance.default]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fb9a86a18d13cc1fa1805f90b45eb097ad308609
