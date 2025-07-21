@@ -1,0 +1,1 @@
+bucket = "my-s3-bucket-hariomkabra" // use a unique name for the S3 bucket 
