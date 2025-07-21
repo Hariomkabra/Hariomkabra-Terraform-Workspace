@@ -10,4 +10,4 @@ resource "aws_instance" "name" {
     day = "day - 04"
   }
 
-}  
+}    
