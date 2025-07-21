@@ -6,5 +6,4 @@
 	ignorecase = true
 [remote "origin"]
 	url = https://github.com/Hariomkabra/Hariomkabra-Terraform-Workspace.git
-	fetch = +refs/*:refs/*
-	mirror = true
+	fetch = +refs/heads/*:refs/remotes/origin/*
