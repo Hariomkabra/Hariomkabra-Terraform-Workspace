@@ -8,7 +8,7 @@ resource "aws_instance" "name" {
     #key_name = "test"
   
 }
-
+ 
 
 
 resource "aws_s3_bucket" "name" {
