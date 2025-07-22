@@ -1,5 +1,3 @@
-// assign the subnet for the instances
-
 data "aws_subnet" "name" {
     filter {
     name   = "tag:Name"
@@ -28,21 +26,21 @@ data "aws_ami" "amzlinux" {
 
 }
 
+variable "env" {
+  type = list(string)
+  default = ["dev","stg","prod"]
 
- 
-
-
-
-
-
+}
 
 resource "aws_instance" "name" {
-    ami = "ami-0a1235697f4afa8a4"
-    instance_type = "t2.micro"
+  ami = "ami-0a1235697f4afa8a4"
+  instance_type = "t2.micro"
     subnet_id = data.aws_subnet.name.id
-    associate_public_ip_address = true 
+    for_each = toset(var.env)
+
     tags = {
-        Name = "stg"
-    }  
-    user_data = file("test.sh")
+      Name = each.value 
+
+    }
+
 }
