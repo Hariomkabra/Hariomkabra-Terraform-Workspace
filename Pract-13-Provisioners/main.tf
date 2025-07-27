@@ -136,7 +136,6 @@ resource "null_resource" "run_script" {
   }
 }
 
-
 #Solution-2 to Re-Run the Provisioner
 #Use terraform taint to manually mark the resource for recreation:
 # terraform taint aws_instance.server
