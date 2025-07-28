@@ -1,10 +1,10 @@
 
+
 terraform {
-  backend "s3" {
-    bucket         = "nareshitveeranarni"
+  backend "s3" { 
+    bucket         = "m0123sssss" // Replace with your actual bucket name and name should be unique 
     key            = "dev/terraform.tfstate"
-    region         = "us-east-1"
+    region         = "ap-south-1"
     use_lockfile = true
-    
   }
 }
