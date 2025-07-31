@@ -21,4 +21,5 @@ module "ec2" {
   subnet_id = module.vpc.public_subnet_id
   env = var.env
 
+
 }
