@@ -22,11 +22,15 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ap-south-1  # Change to your region
+        aws-region: ap-south-1
+
+    - name: Terraform Format Check
+      run: terraform fmt -check -recursive
+      working-directory: ./prctday6
 
     - name: Terraform Init
       run: terraform init
-      working-directory: ./prctday6  # Adjust path as needed
+      working-directory: ./prctday6
 
     - name: Terraform Plan
       run: terraform plan
