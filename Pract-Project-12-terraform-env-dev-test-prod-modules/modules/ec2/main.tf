@@ -5,6 +5,6 @@ resource "aws_instance" "app" {
 
   tags = {
     Name = "${var.env}-ec2"
-  }
-  
+  } 
+
 }
