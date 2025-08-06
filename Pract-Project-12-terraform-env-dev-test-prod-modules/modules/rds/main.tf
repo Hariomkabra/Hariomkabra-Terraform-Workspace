@@ -21,4 +21,5 @@ resource "aws_db_subnet_group" "default" {
   tags = {
     Name = "${var.env}-db-subnet-group"
   }
+
 }
